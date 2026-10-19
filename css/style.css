@@ -61,7 +61,7 @@ iframe {
 
 /* Keyboard focus */
 a:focus {
-  outline: 4px solid #00274C;
+  outline: 4px dashed #00274C;
   outline-offset: 3px;
 }
 
@@ -78,6 +78,8 @@ a:focus {
 
 .skip:focus {
   top: 10px;
+  outline: 4px dashed white;
+  outline-offset: 3px;
 }
 
 /* Header and navigation*/
@@ -222,6 +224,11 @@ aside > a {
 aside p a {
   color: #FFCB05;
 }
+
+aside .elo-link {
+  color: #FFCB05;
+}
+
 
 /* footer */
 footer {
