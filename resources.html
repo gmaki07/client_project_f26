@@ -177,6 +177,31 @@ Content taken & modified from Claude with the prompt, "Help me come up with idea
           <p><strong>Best for:</strong> final-year Master's students and final-semester seniors.</p>
           <p><strong>Often matches:</strong> capstones, client clinics, and Master's thesis labs.</p>
         </article>
+<!-- AI content starts here -->
+        <section class="level-finder">
+  <h2>Find Your Workshop Level</h2>
+  <form id="level-form">
+    <fieldset>
+      <legend>What are you studying?</legend>
+      <label><input type="radio" name="degree" value="Master's"> Master's (MSI or MHI)</label>
+      <label><input type="radio" name="degree" value="undergraduate"> Undergraduate (BSI)</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Where are you in your program?</legend>
+      <label><input type="radio" name="stage" value="first"> My first semester</label>
+      <label><input type="radio" name="stage" value="middle"> In the middle of my program</label>
+      <label><input type="radio" name="stage" value="final"> In my final year or semester</label>
+    </fieldset>
+
+    <p id="level-error" role="alert" hidden>Please choose one answer from each group.</p>
+    <button type="submit">Show my workshop level</button>
+  </form>
+  <div id="level-result" aria-live="polite" hidden></div>
+</section>
+<!-- AI content ends here:
+ Content taken & modified from Claude with the prompt, "I want to include a form about helping student find their appropriate workshop level, help me write the content based off this example {inputed discussion 12 code example}": and then edited parts to fit ELO" Anthropic. (2026). Claude (Claude Sonnet 5.5) [Large language model]. https://claude.ai
+  -->
         <p>
           Questions about workshop content? Contact Alissa Talley-Pixley, Senior Associate Director
           of Student Engagement, at <a href="mailto:alissat@umich.edu">alissat@umich.edu</a>.
