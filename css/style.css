@@ -4,6 +4,11 @@ Citations:
     Design of mobile version inspired by the UMSI website (si.umich.edu): white pages, U-M Blue text, Maize accents. Fonts: Montserrat and Barlow Condensed from Google Fonts (https://fonts.google.com). 
     Used Michigan colors and typography from the U-M Brand Guidelines (https://brand.umich.edu/design-resources/colors/ and https://brand.umich.edu/design-resources/typography/).
     
+    Tablet/desktop layout
+    Content taken & modified from Claude with the prompt, "Help me fix the text-overflow issue in the footer and newsletter layout for mobile and tablet view 320px, 375px, and 768px. What are the steps to make the navigation buttons equal size?": and then pasted in my css code for my footer, newsletter, and navigation buttons": Anthropic. (2026, November 22). Claude [Large language model]. https://claude.ai.
+
+    MDN Web Docs. (n.d.). overflow-wrap. Mozilla. https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap
+    MDN Web Docs. (n.d.). minmax(). Mozilla. https://developer.mozilla.org/en-US/docs/Web/CSS/minmax
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Montserrat:wght@400;700&display=swap");
@@ -239,7 +244,7 @@ aside > a {
  
 aside p a {
   color: #FFCB05;
-  overflow-wrap: anywhere; /* citation:  */
+  overflow-wrap: anywhere; /* Citation: Claude (Anthropic, 2026); see MDN overflow-wrap in header */
 }
 
 aside .elo-link {
@@ -254,7 +259,7 @@ footer {
   padding: 16px;
   font-size: 16px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr); /* citation:  */
+  grid-template-columns: minmax(0, 1fr); /* Citation: minmax(0, 1fr) suggested by Claude (Anthropic, 2026) so the column can shrink on small screens; see MDN minmax() in header */
   gap: 16px;
 }
 
@@ -264,12 +269,12 @@ footer p {
  
 footer a {
   color: #FFCB05;
-  overflow-wrap: anywhere; /* citation:  */
+  overflow-wrap: anywhere; /* Citation: Claude (Anthropic, 2026); see MDN overflow-wrap in header. Lets the long email wrap instead of overflowing. */
 }
 
 address {
   font-style: normal;
-  overflow-wrap: anywhere; /* citation:  */
+  overflow-wrap: anywhere; /* Citation: Claude (Anthropic, 2026); see MDN overflow-wrap in header */
 }
 
 /* Fixing copyright line column */
@@ -416,7 +421,7 @@ aside div {
 }
 
 /* Header buttons */
-/* Citation:  */
+/* Citation: equal-size navigation buttons using flex on li and a, suggested by Claude (Anthropic, 2026) */
 nav li {
   margin-bottom: 0;
   display: flex;
