@@ -99,6 +99,15 @@ header img:first-of-type {
   width: 96px;
 }
 
+header h1 {
+  text-align: center;
+}
+
+header img:nth-of-type(2) {
+  display: block;
+  margin: 16px auto 0;
+}
+
 /* Navigation */
 nav{
     background-color: #00274C;
@@ -289,9 +298,7 @@ address {
 
 /* ----------- Tablet (768px and up) ----------- */
 @media screen and (min-width: 768px) {
-  h1 {font-size:70px;
-    text-align: center;
-  }
+  h1 {font-size:70px;}
   h2 {font-size:28px;}
   iframe {height:315px;}
 
@@ -310,7 +317,7 @@ header {
 header img:first-of-type {
   grid-column: 1;
   grid-row: 1;
-  margin: 0;;
+  margin: 0;
 }
 
 header nav {
