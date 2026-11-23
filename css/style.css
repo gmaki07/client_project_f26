@@ -290,7 +290,7 @@ address {
 /* ----------- Tablet (768px and up) ----------- */
 @media screen and (min-width: 768px) {
   h1 {font-size:70px;
-    text-align: left;
+    text-align: center;
   }
   h2 {font-size:28px;}
   iframe {height:315px;}
@@ -333,6 +333,7 @@ header h1 {
 header img:nth-of-type(2) {
   grid-column: 1/-1;
   grid-row: 3;
+  justify-self: center;
   width: 430px;
   height: 300px;
   object-fit: cover;
@@ -374,7 +375,8 @@ aside div {
 @media screen and (min-width: 1024px) {
   h1 {font-size: 72px;}
   header img:nth-of-type(2) {
-    height:380px;
+    width: 430px;
+    height: 300px;
   }
   main {
     max-width: 1200px;
